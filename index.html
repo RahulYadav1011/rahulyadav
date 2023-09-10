@@ -15,6 +15,30 @@
     <title>Rahul Yadav | Personal Portfolio</title>
 </head>
 <body>
+<script> 
+
+
+ fetch("https://toletplus3-dev-ed.develop.my.site.com/talkter/services/apexrest/webStoreController", {
+  method: "GET",
+  // body: JSON.stringify({
+  //   userId: 1,
+  //   title: "Fix my bugs",
+  //   completed: false
+  // }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+  .then((response) => response.json())
+  .then((json) => {
+       let dataLog= json;
+       console.log('dataLOg',dataLog);
+       console.log(json);
+      Document.getElementById('')
+      
+  }  );
+ 
+</script>
 
 <!-- <----navbar---->  
 
@@ -27,7 +51,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav ml-auto" id='custom_nav>
                   <li class="nav-item active">
                     <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                   </li>
