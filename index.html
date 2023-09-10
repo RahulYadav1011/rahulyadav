@@ -39,9 +39,9 @@
       let navBar;
       for(index =0; index<json.length;index++) {
           if(index == 0) {
-              navBar = '<li class="nav-item active"> <a class="nav-link" href="#home">' +json[index].Name + '<span class="sr-only">(current)</span></a></li>';
+              navBar = '<li class="nav-item active"> <a class="nav-link" href="#' +json[index].Name.toLowerCase +'">' +json[index].Name + '<span class="sr-only">(current)</span></a></li>';
           } else {
-              let temp ='<li class="nav-item"> <a class="nav-link" href="#' + json[index].Name + ' ">' + json[index].Name + '</a> </li>';
+              let temp ='<li class="nav-item"> <a class="nav-link" href="#' + json[index].Name.toLowerCase + ' ">' + json[index].Name + '</a> </li>';
               navBar += temp;
           }
       }
